@@ -1,0 +1,44 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact-us Form with Firebase</title>
+    <link rel="stylesheet" href="./Design.css">
+</head>
+<body>
+    <div class="container">
+        <h1 align="center">CONTACT US</h1>
+        <input type="text" id="name" placeholder="Name"><br>
+        <input type="email" id="email" placeholder="Email"><br>
+        <textarea name="message" id="message" cols="30" rows="10" placeholder="Message"></textarea><br>
+        <div class="btns">
+            <button class="btn">SEND</button>
+        </div>
+    </div>
+    
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.9.0/firebase-app.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+          apiKey: "AIzaSyBIZZdlLyICCHHwbkHejJ2zIJxnie-R9sU",
+          authDomain: "fir-webapp-8d287.firebaseapp.com",
+          databaseURL: "https://fir-webapp-8d287-default-rtdb.firebaseio.com",
+          projectId: "fir-webapp-8d287",
+          storageBucket: "fir-webapp-8d287.appspot.com",
+          messagingSenderId: "657445001160",
+          appId: "1:657445001160:web:8973eb7f4f510b2cf8d2fd"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+      </script>
+    <script type="module" src="./Script.js"></script>
+       
+      
+</body>
+</html>
